@@ -1,3 +1,3 @@
-import { BlueButton } from './Button';
+import Navbar from "./Navbar";
 
-export { BlueButton };
+export { Navbar };
