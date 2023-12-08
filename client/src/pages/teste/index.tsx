@@ -21,6 +21,8 @@ const data = [
   }
 ];
 
+// código feito usando mais html e css
+
 export default function Teste() {
   return (
     <HomeContainer>

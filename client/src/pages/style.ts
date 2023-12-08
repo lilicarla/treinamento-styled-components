@@ -1,3 +1,4 @@
+import exp from "constants";
 import styled from "styled-components";
 
 export const HomeContainer = styled.div`
@@ -6,32 +7,46 @@ export const HomeContainer = styled.div`
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
+  overflow-x: hidden;
+`;
 
-  h1 {
-    font-size: 54px;
-    color: ${(props) => props.theme.colors.primary};
-    margin-top: 40px;
-    text-align: center;
+export const HomeContent = styled.div`
+  width: 100vw;
+  height: 100vh;
+  padding: 0 5vw;
+  margin-top: 10vh;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+`;
 
-    @media (max-width: 720px) {
-      font-size: 28px;
-    }
-  }
+export const CardsContainer = styled.div`
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 4rem;
+  margin-top: 4rem;
+`;
 
-  p {
-    font-size: 20px;
-    margin-top: 24px;
-    line-height: 32px;
+export const TitleContainer = styled.div`
+  width: fit-content;
+`;
 
-    @media (max-width: 720px) {
-      font-size: 16px;
-      margin-top: 0;
-    }
-  }
+export const Title = styled.h1`
+  font-family: 'Barlow', sans-serif;
+  padding-left: 5px;
+  padding-right: 5px;
+`;
 
-  img {
-    width: 25%;
-  }
+export const TitleUnderline = styled.div`
+  height: 2px;
+  margin-top: 10px;
+  background-color: #969dff;
 `;

@@ -6,7 +6,8 @@ const Navbar: React.FC = () => {
   return(
   <NavContainer>
     <NavLogo>
-    <img src={LogoCITi.src} alt="Logo CITi" /></NavLogo>
+      <img src={LogoCITi.src} alt="Logo CITi" />
+    </NavLogo>
     <NavLinks>
       <LinkContainer><a href="/">Home</a></LinkContainer>
       <LinkContainer><a href="/">Sobre nós</a></LinkContainer>

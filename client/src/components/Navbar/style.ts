@@ -54,4 +54,9 @@ export const LinkContainer = styled.div`
   a:hover{
     color: #969dff;
   }
+
+  // esconder os links da navbar quando a tela for menor que 768px
+  @media(max-width: 768px){
+    display: none;
+  }
 `;
